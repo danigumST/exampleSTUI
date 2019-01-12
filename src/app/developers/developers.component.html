@@ -1,0 +1,25 @@
+
+     
+    <app-menu></app-menu>
+    <div>
+    <h2>Developers</h2>
+      
+    <table class="table table-striped">
+      <thead>  
+        <tr> 
+          <th>ID</th>
+          <th>Developer Name</th> 
+          <th>Age</th> 
+          <th>Skills</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let developer of developers">
+          <td>{{developer._id}}</td>
+          <td>{{developer.name}}</td>
+          <td>{{developer.age}}</td>
+          <td>{{developer.background}}</td>
+        </tr>
+      </tbody>
+    </table> 
+</div>
